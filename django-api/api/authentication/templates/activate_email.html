@@ -1,0 +1,6 @@
+{% autoescape off %}  
+Здравствуйте {{ user.username }},  
+Привет! Это команда ProStudy! 
+Спасибо за регистрацию на нашем сайте, для подтверждения регистрации перейдите по ссылке:
+http://{{ domain }}{% url 'activate' uidb64=uid token=token %}  
+{% endautoescape %}  
